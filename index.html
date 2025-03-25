@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sway - Share Your Music</title>
+    <meta name="description" content="Sway lets you share your favorite songs, discover new music through friends, and see what's trending in your community.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/sway-logo.png">
+    <link rel="apple-touch-icon" href="images/sway-logo.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Schema.org markup for search engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "MobileApplication",
+      "name": "Sway",
+      "description": "Share your favorite songs, discover new music, and connect with friends.",
+      "applicationCategory": "Music",
+      "operatingSystem": "iOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0"
+      }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="images/sway-logo.png" alt="Sway Logo">
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#download">Download</a>
+                <a href="#support">Support</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content" data-animation="fade-in">
+                <h1>Share Your Music With The World</h1>
+                <p>Post your favorite songs, discover new music, and connect with friends through the music you love.</p>
+                <a href="#download" class="button primary">Download Now</a>
+            </div>
+            <div class="hero-image" data-animation="fade-in" data-delay="300">
+                <div class="phone-mockup">
+                    <img src="images/app-feed.png" alt="Sway App Feed View" class="screenshot">
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg-gradient"></div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 data-animation="fade-in">What Makes Sway Special</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-animation="fade-in" data-delay="150">
+                    <div class="feature-icon">
+                        <img src="images/icon-post.svg" alt="Post Songs Icon">
+                    </div>
+                    <h3>Post Your Favorite Songs</h3>
+                    <p>Share up to 3 songs a day with your friends and community.</p>
+                </div>
+                <div class="feature-card" data-animation="fade-in" data-delay="300">
+                    <div class="feature-icon">
+                        <img src="images/icon-discover.svg" alt="Discover Icon">
+                    </div>
+                    <h3>Discover New Music</h3>
+                    <p>Scroll through the feed to discover songs shared by others.</p>
+                </div>
+                <div class="feature-card" data-animation="fade-in" data-delay="450">
+                    <div class="feature-icon">
+                        <img src="images/icon-rate.svg" alt="Rate Songs Icon">
+                    </div>
+                    <h3>Rate Songs You Hear</h3>
+                    <p>Swipe right to like or left to dislike songs in your feed.</p>
+                </div>
+                <div class="feature-card" data-animation="fade-in" data-delay="600">
+                    <div class="feature-icon">
+                        <img src="images/icon-leaderboard.svg" alt="Leaderboard Icon">
+                    </div>
+                    <h3>Song of the Day</h3>
+                    <p>Check the leaderboard to see the top songs in your community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 data-animation="fade-in">How It Works</h2>
+            
+            <div class="app-showcase">
+                <div class="app-screens" data-animation="fade-in">
+                    <div class="phone-frame">
+                        <div class="screen-content">
+                            <img src="images/app-feed.png" alt="Feed" class="active" id="screen1">
+                            <img src="images/app-leaderboard.png" alt="Leaderboard" id="screen2">
+                            <img src="images/app-profile.png" alt="Profile" id="screen3">
+                            <img src="images/app-post.png" alt="Post" id="screen4">
+                        </div>
+                    </div>
+                    <div class="screen-indicators">
+                        <button class="indicator active" data-screen="screen1"></button>
+                        <button class="indicator" data-screen="screen2"></button>
+                        <button class="indicator" data-screen="screen3"></button>
+                        <button class="indicator" data-screen="screen4"></button>
+                    </div>
+                </div>
+                
+                <div class="app-steps">
+                    <div class="step active" data-animation="slide-in" data-screen="screen1">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Discover New Music</h3>
+                            <p>Browse through songs shared by your friends and community in a beautifully designed feed.</p>
+                        </div>
+                    </div>
+                    <div class="step" data-animation="slide-in" data-screen="screen2">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>See What's Trending</h3>
+                            <p>Check the daily leaderboard to discover the most popular songs of the day.</p>
+                        </div>
+                    </div>
+                    <div class="step" data-animation="slide-in" data-screen="screen3">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Track Your Activity</h3>
+                            <p>View your profile to see your sharing history and engagement stats.</p>
+                        </div>
+                    </div>
+                    <div class="step" data-animation="slide-in" data-screen="screen4">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Share Your Songs</h3>
+                            <p>Post songs directly from Spotify or Apple Music with just a few taps.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <div class="container">
+            <h2 data-animation="fade-in">Get Sway Today</h2>
+            <p data-animation="fade-in" data-delay="150">Join the community and start sharing your music taste.</p>
+            
+            <div class="device-compatibility" data-animation="fade-in" data-delay="300">
+                <span class="ios-badge">iPhone Only</span>
+                <p>Sway is currently available exclusively for iOS devices</p>
+            </div>
+            
+            <div class="download-buttons" data-animation="fade-in" data-delay="450">
+                <a href="https://apps.apple.com/us/app/sway" class="app-store-button" target="_blank" rel="noopener">
+                    <img src="images/app-store-badge.svg" alt="Download on the App Store">
+                </a>
+            </div>
+            
+            <div class="feature-preview" data-animation="fade-in" data-delay="600">
+                <img src="images/app-leaderboard.png" alt="Sway Leaderboard" class="preview-image">
+                <div class="preview-dots">
+                    <div class="dot purple"></div>
+                    <div class="dot yellow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="download-bg-gradient"></div>
+    </section>
+
+    <section id="support" class="support">
+        <div class="container">
+            <h2 data-animation="fade-in">Support</h2>
+            <p data-animation="fade-in" data-delay="150">Need help? We're here for you.</p>
+            <div class="support-options">
+                <a href="mailto:zane@swaysong.com" class="support-option" data-animation="fade-in" data-delay="300">
+                    <div class="support-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </div>
+                    <h3>Email Support</h3>
+                    <p>zane@swaysong.com</p>
+                </a>
+                <a href="privacy.html" class="support-option" data-animation="fade-in" data-delay="450">
+                    <div class="support-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                    </div>
+                    <h3>Privacy Policy</h3>
+                    <p>Read our privacy policy</p>
+                </a>
+                <a href="terms.html" class="support-option" data-animation="fade-in" data-delay="600">
+                    <div class="support-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    </div>
+                    <h3>Terms of Service</h3>
+                    <p>Read our terms of service</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/sway-logo.png" alt="Sway Logo">
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>About</h4>
+                        <a href="#features">Features</a>
+                        <a href="#how-it-works">How It Works</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <a href="mailto:zane@swaysong.com">zane@swaysong.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sway. All rights reserved. Created in Boston.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

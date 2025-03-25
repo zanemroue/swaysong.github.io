@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+  <defs>
+    <linearGradient id="swayGradient" x1="40" y1="4" x2="40" y2="76" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F50000"/>
+      <stop offset="100%" stop-color="#AC00FF"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="40" cy="40" r="36" fill="#f9f2ff" stroke="#612078" stroke-width="2"/>
+  
+  <!-- Music note -->
+  <path d="M50,24v25c0,5-4,9-9,9s-9-4-9-9s4-9,9-9c1,0,2,0.2,3,0.5V33l6-9z" fill="none" stroke="url(#swayGradient)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Note circles -->
+  <circle cx="41" cy="49" r="4.5" fill="url(#swayGradient)"/>
+  <circle cx="50" cy="33" r="4.5" fill="url(#swayGradient)"/>
+  
+  <!-- Text lines -->
+  <rect x="20" y="22" width="20" height="3" rx="1.5" fill="url(#swayGradient)" opacity="0.8"/>
+  <rect x="20" y="32" width="14" height="3" rx="1.5" fill="url(#swayGradient)" opacity="0.6"/>
+  <rect x="20" y="42" width="10" height="3" rx="1.5" fill="url(#swayGradient)" opacity="0.4"/>
+</svg>

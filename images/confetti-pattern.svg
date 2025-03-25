@@ -1,0 +1,19 @@
+<!-- Create a new file: images/confetti-pattern.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="swayGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F50000"/>
+      <stop offset="100%" stop-color="#AC00FF"/>
+    </linearGradient>
+  </defs>
+  <!-- Purple confetti -->
+  <circle cx="20" cy="30" r="4" fill="#AC00FF" opacity="0.8"/>
+  <circle cx="120" cy="150" r="5" fill="#AC00FF" opacity="0.7"/>
+  <!-- Yellow confetti -->
+  <circle cx="160" cy="60" r="6" fill="#FFD700" opacity="0.8"/>
+  <circle cx="80" cy="100" r="3" fill="#FFD700" opacity="0.7"/>
+  <!-- Triangles -->
+  <polygon points="40,20 45,30 35,30" fill="#AC00FF" opacity="0.6"/>
+  <polygon points="140,170 150,180 130,180" fill="#FFD700" opacity="0.6"/>
+  <!-- More shapes... -->
+</svg>

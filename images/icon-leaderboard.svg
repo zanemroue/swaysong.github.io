@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+  <defs>
+    <linearGradient id="swayGradient" x1="40" y1="4" x2="40" y2="76" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F50000"/>
+      <stop offset="100%" stop-color="#AC00FF"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="40" cy="40" r="36" fill="#f9f2ff" stroke="#612078" stroke-width="2"/>
+  
+  <!-- Trophy -->
+  <path d="M40,14l7,10h-14L40,14z" fill="url(#swayGradient)"/>
+  <rect x="36" y="24" width="8" height="4" rx="1" fill="url(#swayGradient)"/>
+  
+  <!-- Leaderboard background - made taller -->
+  <rect x="22" y="32" width="36" height="34" rx="4" fill="white" stroke="#612078" stroke-width="2"/>
+  
+  <!-- Divider lines - repositioned -->
+  <line x1="22" y1="42" x2="58" y2="42" stroke="#612078" stroke-width="1.5" stroke-dasharray="2,2"/>
+  <line x1="22" y1="52" x2="58" y2="52" stroke="#612078" stroke-width="1.5" stroke-dasharray="2,2"/>
+  <line x1="22" y1="62" x2="58" y2="62" stroke="#612078" stroke-width="1.5" stroke-dasharray="2,2"/>
+  
+  <!-- Rank #1 -->
+  <g>
+    <circle cx="27" cy="37" r="2.5" fill="url(#swayGradient)"/>
+    <text x="27" y="38.5" font-family="Arial, sans-serif" font-size="4" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">1</text>
+    <rect x="32" y="35.5" width="22" height="3" rx="1.5" fill="url(#swayGradient)" opacity="0.8"/>
+  </g>
+  
+  <!-- Rank #2 -->
+  <g>
+    <circle cx="27" cy="47" r="2.5" fill="url(#swayGradient)" opacity="0.8"/>
+    <text x="27" y="48.5" font-family="Arial, sans-serif" font-size="4" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">2</text>
+    <rect x="32" y="45.5" width="18" height="3" rx="1.5" fill="url(#swayGradient)" opacity="0.6"/>
+  </g>
+  
+  <!-- Rank #3 -->
+  <g>
+    <circle cx="27" cy="57" r="2.5" fill="url(#swayGradient)" opacity="0.6"/>
+    <text x="27" y="58.5" font-family="Arial, sans-serif" font-size="4" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">3</text>
+    <rect x="32" y="55.5" width="14" height="3" rx="1.5" fill="url(#swayGradient)" opacity="0.4"/>
+  </g>
+</svg>
