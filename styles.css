@@ -638,7 +638,6 @@ footer {
 
 .footer-logo img {
     height: 30px;
-    filter: brightness(0) invert(1);
 }
 
 .footer-links {
