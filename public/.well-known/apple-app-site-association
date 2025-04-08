@@ -1,0 +1,31 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "UU7DB8M6RV.com.zanemroue.Swayy",
+                "paths": [
+                    "/profile/*",
+                    "/song/*",
+                    "/leaderboard/*",
+                    "NOT /api/*",
+                    "NOT /admin/*"
+                ],
+                "components": [
+                    {
+                        "/": "/profile/*",
+                        "comment": "Matches any URL with a path that starts with /profile/."
+                    },
+                    {
+                        "/": "/song/*",
+                        "comment": "Matches any URL with a path that starts with /song/."
+                    },
+                    {
+                        "/": "/leaderboard/*",
+                        "comment": "Matches any URL with a path that starts with /leaderboard/."
+                    }
+                ]
+            }
+        ]
+    }
+} 

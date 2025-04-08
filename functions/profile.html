@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{USERNAME}} on Sway - Song of the Day</title>
+    <meta name="description" content="Join Sway and follow {{USERNAME}} to discover new music every day.">
+    
+    <!-- Open Graph tags for better social sharing -->
+    <meta property="og:title" content="Follow {{USERNAME}} on Sway - Song of the Day">
+    <meta property="og:description" content="Join Sway to discover and share music with friends">
+    <meta property="og:image" content="{{PROFILE_IMAGE}}">
+    <meta property="og:url" content="{{OG_URL}}">
+    
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Follow {{USERNAME}} on Sway">
+    <meta name="twitter:description" content="Join Sway to discover and share music with friends">
+    <meta name="twitter:image" content="{{PROFILE_IMAGE}}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/sway-logo.png">
+    <link rel="apple-touch-icon" href="/images/sway-logo.png">
+    
+    <!-- Include your existing CSS -->
+    <link rel="stylesheet" href="/styles.css">
+    
+    <!-- Fonts - Using your existing Raleway font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Additional styles specific to the profile page */
+        .profile-card {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 60px;
+            object-fit: cover;
+            margin: 0 auto;
+            display: block;
+            border: 4px solid var(--purple);
+        }
+        
+        .username {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0 10px;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--purple);
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(to right, var(--red), var(--purple));
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 16px 32px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            margin: 30px 0 15px;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(172, 0, 255, 0.5);
+        }
+        
+        .help-text {
+            font-size: 14px;
+            color: var(--text-secondary);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .profile-section {
+            padding: 80px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Include your existing website header -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="/">
+                    <img src="/images/sway-logo.png" alt="Sway Logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="/#features">Features</a>
+                <a href="/#how-it-works">How It Works</a>
+                <a href="/#download">Download</a>
+                <a href="/#support">Support</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-card">
+                <img id="profile-image" src="/images/default-profile.png" alt="Profile Picture" class="profile-image">
+                <h1 id="username-display" class="username">Sway User</h1>
+                
+                <div class="stats">
+                    <div class="stat">
+                        <div id="songs-count" class="stat-value">0</div>
+                        <div class="stat-label">Songs</div>
+                    </div>
+                    <div class="stat">
+                        <div id="followers-count" class="stat-value">0</div>
+                        <div class="stat-label">Followers</div>
+                    </div>
+                </div>
+                
+                <a href="https://apps.apple.com/app/sway-song-of-day/id6743491738" class="cta-button">
+                    Download Sway App
+                </a>
+                
+                <p class="help-text">
+                    Download the app to follow this user and discover new music daily!
+                </p>
+            </div>
+            
+            <div class="feature-preview" data-animation="fade-in">
+                <h2>About Sway - Song of the Day</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-card" data-animation="fade-in" data-delay="150">
+                        <div class="feature-icon">
+                            <img src="/images/icon-post.svg" alt="Post Songs Icon">
+                        </div>
+                        <h3>Share Daily Songs</h3>
+                        <p>Post one song every day to share with your friends and the community.</p>
+                    </div>
+                    <div class="feature-card" data-animation="fade-in" data-delay="300">
+                        <div class="feature-icon">
+                            <img src="/images/icon-discover.svg" alt="Discover Icon">
+                        </div>
+                        <h3>Follow Friends</h3>
+                        <p>Connect with friends and discover what they're listening to.</p>
+                    </div>
+                    <div class="feature-card" data-animation="fade-in" data-delay="450">
+                        <div class="feature-icon">
+                            <img src="/images/icon-leaderboard.svg" alt="Leaderboard Icon">
+                        </div>
+                        <h3>Song Leaderboard</h3>
+                        <p>See which songs are trending in the community each day.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include your existing website footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="/images/sway-logo-white.png" alt="Sway Logo">
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>About</h4>
+                        <a href="/#features">Features</a>
+                        <a href="/#how-it-works">How It Works</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="/privacy.html">Privacy Policy</a>
+                        <a href="/terms.html">Terms of Service</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <a href="mailto:zane@swaysong.com">zane@swaysong.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sway. All rights reserved. Created in Boston.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Include your existing website scripts -->
+    <script src="/script.js"></script>
+</body>
+</html> 
